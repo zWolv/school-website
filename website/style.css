@@ -1,0 +1,131 @@
+#background {
+    background-image: url("/website/plaatjes/overwatch.jpg");
+    background-size:cover;
+    margin:0;
+    padding:0;
+}
+
+body {
+    margin:0;
+    padding:0;
+}
+
+nav {
+    max-width:1960px;
+    background-color:rgb(22, 10, 129);
+    padding:0;
+    margin:0;
+}
+    
+#nav-balk {
+    font-size:19px;
+    line-height:48px;
+    text-align:center;
+    height:80px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgb(22, 10, 129);
+}
+
+#nav-balk > li {
+    text-align:center;
+    height:80px;
+    float: left;
+}
+
+#nav-balk > li a {
+    display: block;
+    color:rgb(231, 12, 12);
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration:none;
+}
+
+/* Change the link color to #111 (black) on hover */
+#nav-balk  >li > a:hover {
+    background-color: #111;
+    height:80px;
+}
+
+#head {
+    height:80px;
+    width:auto;
+}
+
+#description {
+    background:rgba(201, 185, 185, 0.363);
+    position:fixed;
+    top:200px;
+    height:500px;
+    width:1300px;
+    left:80px;
+}
+
+#side {
+    background:rgba(201, 185, 185, 0.363);
+    position:fixed;
+    top:200px;
+    height:500px;
+    width:300px;
+    left:1500px;
+    border:solid black;
+    padding:0;
+    margin:0;
+    background:white;
+    z-index:1;
+}
+
+#side > ul {
+    z-index:1;
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+
+li.sidebar {
+    text-align:center;
+    padding:0;
+    margin-top:35px;
+    font-weight:bold;
+    color:rgb(109, 95, 81);
+    list-style-type:none;
+    font-size:40px;
+    font-family:fantasy;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:35px;
+    overflow:hidden;
+    height:50px;
+    z-index:1;
+}
+.sidebar > a {
+    text-decoration:none;
+    display:block;
+    color:rgb(109, 95, 81);
+    height:44px;
+    padding:auto;
+    z-index:1;
+}
+
+.sidebar > a:hover {
+    color:rgb(250, 123, 3);
+    z-index:1;
+}
+
+#side-pic {
+    top:237px;
+    left:1525px;
+    height:56px;
+    position:fixed;
+    z-index:2;
+}
+
+#media1 {
+    position:fixed;
+    top:330px;
+    left:1540px;
+    height:34px;
+    z-index:2;
+}
