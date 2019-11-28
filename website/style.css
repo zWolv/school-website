@@ -1,20 +1,35 @@
+* {
+    box-sizing:border-box;
+}
 #background {
-    background-image: url("/website/plaatjes/overwatch.jpg");
+    background-image: url("/website/plaatjes/overwatch.jpg") ;
     background-size:cover;
-    margin:0;
-    padding:0;
+    background-repeat:no-repeat;
+
+    background-color:black;
 }
 
-body {
+/* #nav-extend {
+    background-color:rgb(22, 10, 129);
+    z-index:1;
     margin:0;
     padding:0;
+    top:0px;
+    left:0;
+    width:100%;
+
 }
+*/
 
 nav {
+    z-index:2;
     max-width:1960px;
+    width:100%;
     background-color:rgb(22, 10, 129);
     padding:0;
     margin:0;
+    position:fixed;
+    top:0px;
 }
     
 #nav-balk {
@@ -43,10 +58,14 @@ nav {
     text-decoration:none;
 }
 
-/* Change the link color to #111 (black) on hover */
 #nav-balk  >li > a:hover {
     background-color: #111;
     height:80px;
+}
+
+html, body { padding: 0; 
+    margin: 0; 
+    height: 100%; 
 }
 
 #head {
@@ -54,28 +73,54 @@ nav {
     width:auto;
 }
 
-#description {
-    background:rgba(201, 185, 185, 0.363);
-    position:fixed;
-    top:200px;
-    height:500px;
-    width:1300px;
+
+#wrapper1 {
+    display: inline-block; /* shrink to fit */
+    width: 60%;
+    height:50%;          /* whatever width you like */
+    position: relative;
+    max-width:1500px;
+    max-height:500px;
+    top:190px;
     left:80px;
+    background:rgba(201, 185, 185, 0.363);
+    margin:0;
+    padding:0;
+}
+#wrapper1::after {
+    padding-top: 56.25%; /* percentage of containing block _width_ */
+    display: block;
+    content: '';
 }
 
-#side {
-    background:rgba(201, 185, 185, 0.363);
-    position:fixed;
-    top:200px;
-    height:500px;
-    width:300px;
-    left:1500px;
-    border:solid black;
-    padding:0;
-    margin:0;
+.content {
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0;  /* follow the parent's edges */
+    border:solid black;            /* just so you can see the box */
+}
+
+#wrapper2 {
+    display:inline-block;
+    width:20%;
+    height:50%;
+    position:relative;
+    max-width:300px;
+    max-height:500px;
+    top:190px;
+    left:200px;
     background:white;
     z-index:1;
+    margin:0;
+    padding:0;
 }
+
+#wrapper2::after {
+    padding-top:56.25%;
+    display:block;
+    content: '';
+}
+
+
 
 #side > ul {
     z-index:1;
@@ -104,7 +149,8 @@ li.sidebar {
     text-decoration:none;
     display:block;
     color:rgb(109, 95, 81);
-    height:44px;
+    max-height:44px;
+    height:33%;
     padding:auto;
     z-index:1;
 }
@@ -114,18 +160,24 @@ li.sidebar {
     z-index:1;
 }
 
+
 #side-pic {
-    top:237px;
-    left:1525px;
-    height:56px;
-    position:fixed;
+    max-width:50px;
+    position:absolute;
     z-index:2;
+    top:40px;
+    left:40px;
 }
 
 #media1 {
-    position:fixed;
-    top:330px;
-    left:1540px;
+    top:127px;
+    position:absolute;
     height:34px;
     z-index:2;
+    left:40px;
+}
+
+p {
+    margin:0;
+    padding:7.5px;
 }
