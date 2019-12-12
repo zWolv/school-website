@@ -9,6 +9,10 @@
     background-color:black;
 }
 
+body {
+    min-width:1080px;
+}
+
 nav {
     z-index:2;
     max-width:1960px;
@@ -137,13 +141,14 @@ li.sidebar {
     z-index:1;
 }
 .sidebar > a {
+    border: 1px solid red;
     text-decoration:none;
-    display:block;
+    /*display:block;*/
     color:rgb(109, 95, 81);
     max-height:44px;
     height:33%;
-    padding:auto;
-    z-index:1;
+    /*padding:auto;*/
+    /*z-index:1;*/
 }
 
 .sidebar > a:hover {
@@ -153,12 +158,17 @@ li.sidebar {
 
 
 #side-pic {
+    float: left;
     max-width:50px;
-    position:absolute;
+    border: 1px black solid;
+    
+    /*
+    max-width:50px;
+    position:relative;
     z-index:2;
     top:40px;
     left:40px;
-
+*/
 }
 
 #media1 {
