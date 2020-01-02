@@ -2,7 +2,7 @@
     box-sizing:border-box;
 }
 #background {
-    background-image: url("/website/plaatjes/overwatch.jpg") ;
+    background-image: url("/website/plaatjes/overwatch.jpg");
     background-size:cover;
     background-repeat:no-repeat;
     background-attachment:fixed;
@@ -311,4 +311,136 @@ p {
         top:128px;
 
     }
+}
+
+#wrapper6 {
+    display:inline-block;
+    width:20%;
+    height:20%;
+    position:relative;
+    max-width:300px;
+    max-height:200px;
+    top:190px;
+    left:160px;
+    background:rgba(224, 206, 202, 0.404);
+    z-index:1;
+    margin:0;
+    padding:0;
+    border:solid black;
+    overflow:auto;
+}
+
+#wrapper6::after {
+    padding-top:56.25%;
+    display:block;
+    content:'';
+}
+
+#gmbackground {
+    background-image: url("/website/plaatjes/gamemodes.png");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.mode {
+    font-weight:bold;
+    font-size:25px;
+}
+
+.uitleg {
+    font-size:18px;
+    font-weight:normal;
+}
+
+#wrapper7 {
+    display:inline-block;
+    width:20%;
+    height:20%;
+    position:relative;
+    max-width:300px;
+    max-height:200px;
+    top:190px;
+    left:200px;
+    background:rgba(224, 206, 202, 0.404);
+    z-index:1;
+    margin:0;
+    padding:0;
+    border:solid black;
+    overflow:auto;
+}
+
+#wrapper7::after {
+    padding-top:56.25%;
+    display:block;
+    content:'';
+}
+
+#wrapper8 {
+    display:inline-block;
+    width:20%;
+    height:20%;
+    position:relative;
+    max-width:300px;
+    max-height:200px;
+    top:190px;
+    left:240px;
+    background:rgba(224, 206, 202, 0.404);
+    z-index:1;
+    margin:0;
+    padding:0;
+    border:solid black;
+    overflow:auto;
+}
+
+#wrapper8::after {
+    padding-top:56.25%;
+    display:block;
+    content:'';
+}
+
+#wrapper9 {
+    display:inline-block;
+    width:20%;
+    height:20%;
+    position:relative;
+    max-width:300px;
+    max-height:200px;
+    top:190px;
+    left:280px;
+    background:rgba(224, 206, 202, 0.404);
+    z-index:1;
+    margin:0;
+    padding:0;
+    border:solid black;
+    overflow:auto;
+}
+
+#wrapper9::after {
+    padding-top:56.25%;
+    display:block;
+    content:'';
+}
+
+#wrapper10 {
+    display:inline-block;
+    width:20%;
+    height:20%;
+    position:relative;
+    max-width:300px;
+    max-height:200px;
+    top:420px;
+    right:1056px;
+    background:rgba(224, 206, 202, 0.404);
+    z-index:1;
+    margin:0;
+    padding:0;
+    border:solid black;
+    overflow:auto;
+}
+
+#wrapper10::after {
+    padding-top:56.25%;
+    display:block;
+    content:'';
 }
