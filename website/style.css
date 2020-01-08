@@ -374,8 +374,8 @@ p {
 }
 
 .mapspan {
-    font-weight:500;
-    font-family:fantasy;
+    font-weight:800;
+    font-family:Helvetica;
 }
 
 .flexbox4 {
@@ -447,6 +447,13 @@ p {
     border:solid black;
     overflow:auto;
     margin-right:12%;
+}
+
+#heroesback {
+    background-image: url("/website/plaatjes/algemeen/heroes.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
 }
 
 .uitlegtekst {
